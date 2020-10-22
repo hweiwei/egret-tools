@@ -1,14 +1,6 @@
 var fs = require('fs');
 var path = require('path');
-// var zipper = require('zip-local');
-// var oss = require('ali-oss');
-// const ossclient = new oss({
-//     region: 'oss-cn-shanghai',
-//     // 云账号AccessKey有所有API访问权限，建议遵循阿里云安全最佳实践，部署在服务端使用RAM子账号或STS，部署在客户端使用STS。
-//     accessKeyId: 'LTAIsATacs31TIxi',
-//     accessKeySecret: 'bcxH798C5S7jNUabjzUiKgLkaN3OZH',
-//     bucket: 'nsnfish',
-// });
+
 var localpath = 'preVersionPackage/project.manifest';
 var temppath = 'project.manifest';
 var localManifast = fs.readFileSync(localpath, 'utf-8');
